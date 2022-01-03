@@ -1,3 +1,4 @@
+/* Google font family */
 body {
   font-family: "Raleway", sans-serif;
   background-color: #ffe17f;
@@ -12,6 +13,8 @@ h1 {
   font-size: 40px;
 }
 
+
+/* Fit movie poster */
 .movie-Poster {
   max-height: 350px;
   margin-top: 6px;
@@ -21,6 +24,7 @@ h1 {
   max-width: 750px;
 }
 
+/* Alter Materialize parallax */
 .parallax-container .parallax img {
   opacity: 100;
   max-width: 50px;
@@ -37,16 +41,19 @@ h1 {
   margin: auto;
 }
 
+/* Fit footer */
 footer {
   font-family: "Limelight", cursive;
   color: white;
   text-align: center;
   align-items: center;
-  
-
 }
 
 .saveBtn {
   background-color: white;
   color: black;
+}
+
+textarea {
+  color: white;
 }

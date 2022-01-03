@@ -11,9 +11,7 @@ var service = document.querySelector("#provider").value;
 
 var movieCard = $("#movieInfoResults");
 
-// Assigning IDs to variables
-
-// let movieResult = $('#movie-result');
+// Assign IDs to variables
 
 let searchTitle = $("#searchBar");
 
@@ -24,7 +22,7 @@ let searchBtn = $("#searchBtn");
 function getInfo(title, synopsis) {
   movieCard.empty();
 
-  // This hides the movie synopsis card until a title is searched
+  // Hide the movie synopsis card until a title is searched
   let movieDescription = document.getElementById("movieDescription");
   movieDescription.style.display = "block";
 
@@ -34,27 +32,15 @@ function getInfo(title, synopsis) {
 
   let movieTitle = $("<h3>").addClass("movie-title").text(title);
 
-  //   movieInfo.append(movieTitle);
-
   let movieSummary = $("<div>").addClass("movie-summary");
 
   let movieSynopsis = $("<p>").addClass("movie-synopsis").text(synopsis);
 
-  //   let movieImg = $('<img>').addClass('card-img').attr("src", poster);
-
-  //   movieSummary.append(movieImg);
-  //   movieSummary.append(movieSynopsis);
-  //   movieTitle.append(movieSummary);
   movieInfo.append(movieTitle).append(movieSynopsis);
   cardContainer.append(movieInfo);
   movieCard.append(cardContainer);
-  //   movieResult.appendTo(movieCard);
-
-
-    
 }
 
-// $(document).ready(function () {
 $("#searchBtn").click(function (event) {
   event.preventDefault();
   searchBar = $("#searchBar").val();
@@ -84,7 +70,7 @@ $("#searchBtn").click(function (event) {
   }).done(function (response) {
     var searchResults = JSON.parse(response);
 
-    // This section needs work!!!  I essentially am trying to get a modal to pop up if no title is found
+
     if (searchResults.results[0].title === undefined)
     function custom_alert( message, title ) {
       
@@ -122,23 +108,15 @@ $("#searchBtn").click(function (event) {
     $("#moviePoster").attr("src", response.Poster);
   });
 });
-// });
 
-// Figure out LocalStorage
-
-// Modal alerts
-
-
-// Creating local storage movie options within Footer
-
-//  store value from text area to local storage
+// Store value from text area to local storage
 $(".saveBtn").on("click" , function(){
     var text = $(this).siblings("textarea").val()
     console.log(text)
     var rank = $(this).siblings("textarea").attr("id")
     localStorage.setItem(rank, text)
 })
-// get item from storage to page after refreshing
+// Get item from storage to page after refreshing
 $("#option1").val(localStorage.getItem(option1))
 $("#option2").val(localStorage.getItem(option2))
 $("#option3").val(localStorage.getItem(option3))

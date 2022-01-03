@@ -32,9 +32,9 @@ It's simple! Type your chosen movie into the search bar, select the streaming se
 ## Links
 
 - Deployed Application
-    - https://kheeb.github.io/can-I-watch-it/
+    - https://giovannaruggio.github.io/can-I-watch-it/
 - GitHub Repository
-    - https://github.com/kheeb/can-I-watch-it/
+    - https://github.com/giovannaruggio/can-I-watch-it
 
 
 Application by Kara Heeb, Giovanna Ruggio, Daniel Westiner, and Troy Eutermoser
